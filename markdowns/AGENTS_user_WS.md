@@ -4,11 +4,11 @@ Behavioral guidelines for coding agents.
 
 ### Work Environment & Operational Rules
 
-- The current host OS is Windows 11 and execution environment is Native Windows. The repository is accessed via VS Code. 
+- The current host OS is Windows 11 and execution environment is Linux (team workstation). The repository is accessed through VS Code Remote - SSH from the Windows host. 
 - Do not overstate or understate user requests, reply with objective viewpoint based from trusted sources.
-- Use the existing shared, user-level uv virtual environment when running simple Python commands on this PC: `C:\Users\QRAFT_BYUNGHO_DT\.venvs\shared`.
+- For repositories configured with uv, use the local repo env to run simple Python commands.
 - For repositories configured with Docker, do not execute any docker commands that actually run or build any containers or services. You are allowed to run other docker commands that inspect status, see logs, etc.
-- Do not create virtual environment, install packages into a system Python, or replace the shared interpreter unless the user explicitly requests it.
+- Do not create virtual environment, install packages into a system Python, or replace the given interpreter unless the user explicitly requests it.
 
 ### Markdown Document Date Management
 
