@@ -36,4 +36,5 @@ Behavioral guidelines for coding agents.
 - Do not change `Updated` when merely reading or inspecting a document.
 - Only update the dates when the file itself is actually modified.
 - When editing a Markdown file, verify before finishing that the metadata exists and reflects the resulting document state.
+- Do not use the middle dot character (·) in any generated text.
 - Do not apply this rule to generated, vendored, third-party, dependency, or externally maintained Markdown files unless the task explicitly requires editing their metadata.
